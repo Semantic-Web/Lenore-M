@@ -4,9 +4,32 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15> .
+@base <http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15> .
 
-<http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15> rdf:type owl:Ontology .
+<http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#IsFemale
+
+:IsFemale rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#IsMale
+
+:IsMale rdf:type owl:ObjectProperty ;
+        
+        owl:inverseOf :IsFemale .
+
+
+
 
 
 #################################################################
@@ -16,23 +39,27 @@
 #################################################################
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Bed
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Bed
 
 :Bed rdf:type owl:Class ;
      
-     rdfs:subClassOf :Resting .
+     rdfs:subClassOf :Resting ;
+     
+     owl:disjointWith :Chair .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#BrushTeeth
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#BrushTeeth
 
 :BrushTeeth rdf:type owl:Class ;
             
-            rdfs:subClassOf :Grooming .
+            rdfs:subClassOf :Grooming ;
+            
+            owl:disjointWith :CombHair .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Chair
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Chair
 
 :Chair rdf:type owl:Class ;
        
@@ -40,15 +67,17 @@
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Climb
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Climb
 
 :Climb rdf:type owl:Class ;
        
-       rdfs:subClassOf :Stairs .
+       rdfs:subClassOf :Stairs ;
+       
+       owl:disjointWith :Descend .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#CombHair
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#CombHair
 
 :CombHair rdf:type owl:Class ;
           
@@ -56,13 +85,13 @@
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Communicating
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Communicating
 
 :Communicating rdf:type owl:Class .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Descend
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Descend
 
 :Descend rdf:type owl:Class ;
          
@@ -70,13 +99,13 @@
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Dining
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Dining
 
 :Dining rdf:type owl:Class .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Eat
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Eat
 
 :Eat rdf:type owl:Class ;
      
@@ -84,21 +113,23 @@
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#GetUp
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#GetUp
 
 :GetUp rdf:type owl:Class ;
        
-       rdfs:subClassOf :Bed .
+       rdfs:subClassOf :Bed ;
+       
+       owl:disjointWith :LieDown .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Grooming
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Grooming
 
 :Grooming rdf:type owl:Class .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#LieDown
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#LieDown
 
 :LieDown rdf:type owl:Class ;
          
@@ -106,15 +137,17 @@
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Meat
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Meat
 
 :Meat rdf:type owl:Class ;
       
-      rdfs:subClassOf :Eat .
+      rdfs:subClassOf :Eat ;
+      
+      owl:disjointWith :Soup .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#PourWater
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#PourWater
 
 :PourWater rdf:type owl:Class ;
            
@@ -122,21 +155,23 @@
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Resting
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Resting
 
 :Resting rdf:type owl:Class .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Sitting
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Sitting
 
 :Sitting rdf:type owl:Class ;
          
-         rdfs:subClassOf :Chair .
+         rdfs:subClassOf :Chair ;
+         
+         owl:disjointWith :StandUp .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Soup
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Soup
 
 :Soup rdf:type owl:Class ;
       
@@ -144,15 +179,17 @@
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Stairs
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Stairs
 
 :Stairs rdf:type owl:Class ;
         
-        rdfs:subClassOf :Traveling .
+        rdfs:subClassOf :Traveling ;
+        
+        owl:disjointWith :Walk .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#StandUp
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#StandUp
 
 :StandUp rdf:type owl:Class ;
          
@@ -160,13 +197,13 @@
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Traveling
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Traveling
 
 :Traveling rdf:type owl:Class .
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#UseTelephone
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#UseTelephone
 
 :UseTelephone rdf:type owl:Class ;
               
@@ -174,7 +211,7 @@
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Walk
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Walk
 
 :Walk rdf:type owl:Class ;
       
@@ -182,9 +219,30 @@
 
 
 
-###  http://www.semanticweb.org/lenore/ontologies/2015/5/untitled-ontology-15#Working
+###  http://www.semanticweb.org/lenore/ontologies/2015/5/ADL-Pedometer-15#Working
 
 :Working rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Communicating
+                :Dining
+                :Grooming
+                :Resting
+                :Traveling
+                :Working
+              )
+] .
 
 
 
