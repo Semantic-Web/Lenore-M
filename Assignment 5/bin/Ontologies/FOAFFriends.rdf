@@ -1,0 +1,39 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Lenore Montalbano</foaf:name>
+<foaf:title>Ms</foaf:title>
+<foaf:givenname>Lenore</foaf:givenname>
+<foaf:family_name>Montalbano</foaf:family_name>
+<foaf:nick>Lenischka</foaf:nick>
+<foaf:homepage rdf:resource="http://lenoremontalbano.com"/>
+<foaf:depiction rdf:resource="http://lenoremontalbano.com/lm.jpg"/>
+<foaf:phone rdf:resource="tel:561-840-6815"/>
+<foaf:workplaceHomepage rdf:resource="http://lenoremontalbano.com"/>
+<foaf:workInfoHomepage rdf:resource="http://lenoremontalbano.com/work.html"/>
+<foaf:schoolHomepage rdf:resource="http://www.fau.edu"/>
+<foaf:knows>
+<foaf:Person rdf:ID="Consiglio">
+<foaf:name>Millie Consiglio</foaf:name>
+<foaf:mbox rdf:resource="mailto:mct@gmail.com"/>
+<rdfs:seeAlso rdf:resource="http://ont.com"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:ID="Pascalli">
+<foaf:name>Don Pascalli</foaf:name>
+<foaf:mbox rdf:resource="mailto:dp@firefox.com"/>
+<rdfs:seeAlso rdf:resource="http://pascalli.com"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person rdf:ID="Semprun">
+<foaf:name>Lynn Semprun</foaf:name>
+<foaf:mbox rdf:resource="mailto:lsemprun@gmail.com"/>
+<rdfs:seeAlso rdf:resource="http://semprun.com"/></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>
