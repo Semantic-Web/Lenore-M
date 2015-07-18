@@ -1,0 +1,64 @@
+                area_name per_capita_income crimes
+0              Rogers Park             23939      8
+1               West Ridge             23040      4
+2                   Uptown             35787      5
+3           Lincoln Square             37524      2
+4             North Center             57123      4
+5                Lake View             60058      9
+6             Lincoln Park             71551      9
+7          Near North Side             88669     26
+8              Edison Park             40959      0
+9             Norwood Park             32875      1
+10          Jefferson Park             27751      4
+11             Forest Glen             44164      2
+12              North Park             26576      1
+13             Albany Park             21323      4
+14            Portage Park             24336     10
+15             Irving Park             27249      1
+16                 Dunning             26282      5
+17              Montclaire             22014      1
+18          Belmont Cragin             15461      4
+19                 Hermosa             15089      4
+20                Avondale             20039      4
+21            Logan Square             31908      6
+22           Humboldt park             13781     15
+23               West Town             43198     12
+24                  Austin             15957     36
+25      West Garfield Park             10934     10
+26      East Garfield Park             12961     13
+27          Near West Side             44689     18
+28          North Lawndale             12034     16
+29          South Lawndale             10402      5
+..                     ...               ...    ...
+48                Roseland             17949     11
+49                 Pullman             20588      1
+50           South Deering             14685      3
+51               East Side             17104      1
+52            West Pullman             16563     10
+53               Riverdale              8201      4
+54               Hegewisch             22677      0
+55          Garfield Ridge             26353      2
+56          Archer Heights             16134      1
+57           Brighton Park             13089      1
+58           McKinley Park             16954      1
+59              Bridgeport             22694      1
+60                New City             12765      8
+61             West Elsdon             15754      1
+62               Gage Park             12171      6
+63                Clearing             25113      4
+64               West Lawn             16907      4
+65            Chicago Lawn             13231      9
+66          West Englewood             11317     17
+67               Englewood             11888     16
+68  Greater Grand Crossing             17285     11
+69                 Ashburn             23482      0
+70          Auburn Gresham             15528     11
+71                 Beverly             39523      0
+72       Washington Height             19713      7
+73         Mount Greenwood             34381      0
+74             Morgan Park             27149      9
+75                  O'Hare             25828      3
+76               Edgewater             33385      6
+77                 CHICAGO             28202      0
+
+[78 rows x 3 columns]
