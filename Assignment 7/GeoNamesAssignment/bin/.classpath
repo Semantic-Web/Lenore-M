@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="src/" kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Lenore/Documents/GitHub/Lenore-M/Assignment 7/GeoNamesAssignment/lib/geonames-source-1.1.12.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
